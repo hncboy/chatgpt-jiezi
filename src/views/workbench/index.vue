@@ -42,12 +42,12 @@ const userStore = useUserStore()
               <!-- TODO start数图 -->
               <n-statistic label="Stars" w-80 ml-20>
                 <a href="https://github.com/hncboy/chatgpt-web-admin">
-                  <!-- <img allt="stars" src="https://badgen.net/github/stars/zclzone/qs-admin"> -->
+                  <img allt="stars" src="https://badgen.net/github/stars/hncboy/chatgpt-web-admi">
                 </a>
               </n-statistic>
               <n-statistic label="Forks" w-80 ml-20>
                 <a href="https://github.com/hncboy/chatgpt-web-admin">
-                  <!-- <img allt="forks" src="https://badgen.net/github/forks/zclzone/qs-admin"> -->
+                  <img allt="forks" src="https://badgen.net/github/forks/hncboy/chatgpt-web-admin">
                 </a>
               </n-statistic>
             </div>
