@@ -2,7 +2,7 @@ import type { RouteType } from '~/types/router'
 const Layout = () => import('@/layout/index.vue')
 
 export default {
-  name: 'Dashboard',
+  name: 'Workbench',
   path: '/',
   component: Layout,
   redirect: '/workbench',
@@ -11,7 +11,7 @@ export default {
   },
   children: [
     {
-      name: 'Workbench',
+      name: 'WorkbenchIndex',
       path: 'workbench',
       component: () => import('./index.vue'),
       meta: {

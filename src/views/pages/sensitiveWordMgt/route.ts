@@ -3,16 +3,16 @@ const Layout = () => import('@/layout/index.vue')
 
 export default {
   name: 'SensitiveWordMgt',
-  path: '/',
+  path: '/sensitiveWordMgt',
   component: Layout,
-  redirect: '/sensitiveWordMgt',
+  redirect: '/sensitiveWordMgt/index',
   meta: {
     order: 4,
   },
   children: [
     {
-      name: 'SensitiveWordMgt',
-      path: 'sensitiveWordMgt',
+      name: 'SensitiveWordMgtIndex',
+      path: 'index',
       component: () => import('./index.vue'),
       meta: {
         title: '敏感词管理',

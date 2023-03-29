@@ -3,16 +3,16 @@ const Layout = () => import('@/layout/index.vue')
 
 export default {
   name: 'UsersMgt',
-  path: '/',
+  path: '/usersMgt',
   component: Layout,
-  redirect: '/usersMgt',
+  redirect: '/usersMgt/index',
   meta: {
     order: 3,
   },
   children: [
     {
-      name: 'UsersMgt',
-      path: 'usersMgt',
+      name: 'usersMgtIndex',
+      path: 'index',
       component: () => import('./index.vue'),
       meta: {
         title: '用户管理',

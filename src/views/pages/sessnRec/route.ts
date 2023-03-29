@@ -3,16 +3,16 @@ const Layout = () => import('@/layout/index.vue')
 
 export default {
   name: 'SessnRec',
-  path: '/',
+  path: '/sessnRec',
   component: Layout,
-  redirect: '/sessnRec',
+  redirect: '/sessnRec/index',
   meta: {
     order: 2,
   },
   children: [
     {
-      name: 'SessnRec',
-      path: 'sessnRec',
+      name: 'sessnReCindex',
+      path: 'index',
       component: () => import('./index.vue'),
       meta: {
         title: '会话记录',

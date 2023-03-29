@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://github.com/hncboy/chatgpt-web-admin">
-    <img alt="Vue Naive Admin Logo" width="200" src="./src/assets/svg/logo.svg">
-  </a>
-</p>
-
 <p align='center'>
   <b>English</b> | 
   <a href="https://github.com/hncboy/chatgpt-web-admin/blob/main/README.zh-CN.md">简体中文</a>

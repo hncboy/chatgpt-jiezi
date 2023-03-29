@@ -3,16 +3,16 @@ const Layout = () => import('@/layout/index.vue')
 
 export default {
   name: 'NewsRec',
-  path: '/',
+  path: '/newsRec',
   component: Layout,
-  redirect: '/newsRec',
+  redirect: '/newsRec/index',
   meta: {
     order: 1,
   },
   children: [
     {
-      name: 'NewsRec',
-      path: 'newsRec',
+      name: 'NewsRecIndex',
+      path: 'index',
       component: () => import('./index.vue'),
       meta: {
         title: '消息记录',
