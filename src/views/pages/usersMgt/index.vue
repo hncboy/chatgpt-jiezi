@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { DataTableColumns } from 'naive-ui'
 import { NButton, NSwitch } from 'naive-ui'
-import { CrudModal, CrudTable, QueryBarItem, useCRUD } from '@zclzone/crud'
 import api from './api'
+import { CrudModal, CrudTable, QueryBarItem, useCRUD } from '@/components/index.js'
 import { formatDateTime, isNullOrUndef, renderIcon } from '@/utils'
 
 interface RowData {

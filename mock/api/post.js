@@ -62,7 +62,7 @@ export default [
     url: '/api/posts',
     method: 'get',
     response: (data = {}) => {
-      const { title, pageNo, pageSize } = data.query
+      const { title, pageNum, pageSize } = data.query
       let pageData = []
       let total = 60
       const filterData = posts.filter(item => item.title.includes(title) || (!title && title !== 0))
@@ -75,7 +75,7 @@ export default [
           pageData = filterData
         }
         pageData = pageData.map((item, index) => ({
-          id: pageSize * (pageNo - 1) + index + 1,
+          id: pageSize * (pageNum - 1) + index + 1,
           ...item,
         }))
       }
@@ -88,7 +88,7 @@ export default [
         data: {
           pageData,
           total,
-          pageNo,
+          pageNum,
           pageSize,
         },
       }

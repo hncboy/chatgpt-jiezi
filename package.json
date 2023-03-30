@@ -22,10 +22,8 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.9.4",
-    "@zclzone/crud": "0.0.12",
     "axios": "^1.2.2",
     "crypto-js": "^4.1.1",
-    "dayjs": "^1.11.7",
     "lodash-es": "^4.17.21",
     "mockjs": "^1.1.0",
     "pinia": "^2.0.28",
@@ -46,6 +44,7 @@
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.9.1",
+    "dayjs": "^1.11.7",
     "eslint": "^8.19.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
