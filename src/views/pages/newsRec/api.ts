@@ -1,9 +1,10 @@
+import type { getChatMessage } from './types/apiTypes'
 import { request } from '@/utils'
-
 export default {
-  getPosts: (params = {}) => request.get('posts', { params }),
-  getPostById: (id: string) => request.get(`/post/${id}`),
-  addPost: (data: any) => request.post('/post', data),
-  updatePost: (data: any) => request.put(`/post/${data.id}`, data),
-  deletePost: (id: string) => request.delete(`/post/${id}`),
+  // 获取消息列表数据
+  getChatMessageData: (params: getChatMessage) => request.post('/chat_message/page', { params }),
+  getPostById: (id: string) => request.get(`/chat_message/post/${id}`),
+  addPost: (data: any) => request.post('/chat_message/post', data),
+  updatePost: (data: any) => request.put(`/chat_message/post/${data.id}`, data),
+  deletePost: (id: string) => request.delete(`/chat_message/post/${id}`),
 }

@@ -162,7 +162,7 @@ onMounted(() => {
       :extra-params="extraParams"
       :scroll-x="1200"
       :columns="columns"
-      :get-data="api.getPosts"
+      :get-data="api.getChatMessageData"
       @on-checked="onChecked"
     >
       <template #queryBar>

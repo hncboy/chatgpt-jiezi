@@ -1,7 +1,7 @@
 const proxyConfigMappings: Record<ProxyType, ProxyConfig> = {
   dev: {
     prefix: '/api',
-    target: 'http://hncboy.natapp1.cc/admin',
+    target: 'http://localhost:8080',
   },
   test: {
     prefix: '/api',
