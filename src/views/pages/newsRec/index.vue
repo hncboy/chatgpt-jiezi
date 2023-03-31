@@ -14,14 +14,15 @@ const extraParams = ref<any>({})
 const columns: DataTableColumns<ChatMessageVO> = [
 
   { title: '消息ID', key: 'messageId', width: 80, ellipsis: { tooltip: true } },
-  { title: '父级回答消息 id', key: 'parentAnswerMessageId', width: 80, ellipsis: { tooltip: true } },
-  { title: '父级问题消息 id', key: 'parentQuestionMessageId', width: 80, ellipsis: { tooltip: true } },
-  { title: '上下文数量', key: 'contextCount', width: 60 },
-  { title: '问题上下文数量', key: 'questionContextCount', width: 50 },
+  { title: '父级消息 id', key: 'parentMessageId', width: 80, ellipsis: { tooltip: true } },
+  // { title: '父级回答消息 id', key: 'parentAnswerMessageId', width: 80, ellipsis: { tooltip: true } },
+  // { title: '父级问题消息 id', key: 'parentQuestionMessageId', width: 80, ellipsis: { tooltip: true } },
+  // { title: '上下文数量', key: 'contextCount', width: 60 },
+  // { title: '问题上下文数量', key: 'questionContextCount', width: 50 },
   {
-    title: '消息类型枚举',
+    title: '类型',
     key: 'messageType',
-    width: 80,
+    width: 40,
     render(row) {
       if (row.messageType === 'ANSWER')
 
@@ -32,12 +33,12 @@ const columns: DataTableColumns<ChatMessageVO> = [
         return h('span', '问题')
     },
   },
-  { title: '聊天室 id', key: 'chatRoomId', width: 80, ellipsis: { tooltip: true } },
-  { title: '对话 id', key: 'conversationId', width: 80, ellipsis: { tooltip: true } },
+  { title: '聊天室 id', key: 'chatRoomId', width: 60, ellipsis: { tooltip: true } },
+  // { title: '对话 id', key: 'conversationId', width: 80, ellipsis: { tooltip: true } },
   {
     title: 'API 类型',
     key: 'apiType',
-    width: 80,
+    width: 50,
     render(row) {
       if (row.apiType === 'ChatGPTAPI')
 
@@ -48,15 +49,15 @@ const columns: DataTableColumns<ChatMessageVO> = [
         return h('span', 'AccessToken')
     },
   },
-  { title: 'IP地址', key: 'ip', width: 80 },
+  { title: 'IP地址', key: 'ip', width: 60 },
   { title: '消息内容', key: 'content', width: 80, ellipsis: { tooltip: true } },
-  { title: '错误响应数据', key: 'responseErrorData', width: 80, ellipsis: { tooltip: true } },
-  { title: '输入消息的 Tokens', key: 'promptTokens', width: 80 },
-  { title: '累计 Tokens', key: 'totalTokens', width: 80 },
+  { title: '错误响应数据', key: 'responseErrorData', width: 50, ellipsis: { tooltip: true } },
+  { title: '输入 Tokens', key: 'promptTokens', width: 50 },
+  { title: '累计 Tokens', key: 'totalTokens', width: 50 },
   {
-    title: '聊天信息状态',
+    title: '消息状态',
     key: 'status',
-    width: 80,
+    width: 50,
     render(row) {
       if (row.status === 'INIT')
 
@@ -78,19 +79,19 @@ const columns: DataTableColumns<ChatMessageVO> = [
   {
     title: '创建时间',
     key: 'createTime',
-    width: 80,
+    width: 50,
     render(row) {
       return h('span', formatDateTime(row.createTime))
     },
   },
-  {
+  /* {
     title: '更新时间',
     key: 'updateTime',
     width: 80,
     render(row) {
       return h('span', formatDateTime(row.updateTime))
     },
-  },
+  }, */
 ]
 
 // 选中事件

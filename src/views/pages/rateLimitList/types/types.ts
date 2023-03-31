@@ -1,23 +1,38 @@
 /**
  * 限流处理器展示参数
  */
-export interface ApifoxModel {
+export interface RateLimitVO {
+
   /**
-   * 时间内已经发送次数
+   * ip 限制时间内已发送次数
    */
   alreadySendCount?: number
+
   /**
    * ip
    */
   ip?: string
+
   /**
-   * 是否被限流
+   * 是否被 ip 限流
    */
-  isLimited?: boolean
+  isIpLimited?: boolean
+
   /**
-   * 限流规则
+   * 是否被全局限流
    */
-  limitRule?: string
+  isGlobalLimited?: boolean
+
+  /**
+   * ip 限流规则
+   */
+  ipLimitRule?: string
+
+  /**
+   * 全局限流规则
+   */
+  globalLimitRule?: string
+
   /**
    * 下次可以发送消息的时间
    */

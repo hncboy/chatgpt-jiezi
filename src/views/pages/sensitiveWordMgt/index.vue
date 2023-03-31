@@ -13,14 +13,14 @@ const extraParams = ref<any>({})
 
 const columns: DataTableColumns<SensitiveWordVO> = [
 
-  { title: '敏感词ID', key: 'id', width: 80, ellipsis: { tooltip: true } },
+  { title: 'ID', key: 'id', width: 80, ellipsis: { tooltip: true } },
   { title: '敏感词', key: 'word', width: 80, ellipsis: { tooltip: true } },
   {
     title: '状态',
     key: 'status',
     width: 60,
     render(row) {
-      if (row.status === '1')
+      if (row.status === 1)
 
         return h('span', '启用')
 

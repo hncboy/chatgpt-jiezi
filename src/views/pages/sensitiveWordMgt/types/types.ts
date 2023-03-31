@@ -58,8 +58,8 @@ export interface SensitiveWordVO {
 * 状态 1 启用 2 停用
 */
 export enum RecordStatus {
-  The1 = '1',
-  The2 = '2',
+  The1 = 1,
+  The2 = 2,
 }
 
 /**

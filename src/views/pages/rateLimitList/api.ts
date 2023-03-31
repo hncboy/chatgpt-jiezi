@@ -1,5 +1,5 @@
 import { request } from '@/utils'
 
 export default {
-  getRateLimitListData: () => request.get('/sys_user/list_rate_limit'),
+  getRateLimitListData: () => request.get('/rate_limit/list'),
 }

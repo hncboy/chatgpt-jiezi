@@ -13,16 +13,15 @@ const extraParams = ref<any>({})
 
 const columns: DataTableColumns<ChatRoomVO> = [
 
-  { title: '对话ID', key: 'conversationId', width: 60, ellipsis: { tooltip: true } },
-  { title: '第一条消息ID', key: 'firstMessageId', width: 60, ellipsis: { tooltip: true } },
-  { title: '聊天室 id', key: 'chatRoomId', width: 60, ellipsis: { tooltip: true } },
+  { title: '聊天室 id', key: 'id', width: 50, ellipsis: { tooltip: true } },
+  // { title: '对话ID', key: 'conversationId', width: 60, ellipsis: { tooltip: true } },
+  // { title: '第一条消息ID', key: 'firstMessageId', width: 60, ellipsis: { tooltip: true } },
   { title: 'IP地址', key: 'ip', width: 80 },
   { title: '对话标题', key: 'title', width: 150, ellipsis: { tooltip: true } },
-  { title: '对话 id', key: 'conversationId', width: 80, ellipsis: { tooltip: true } },
   {
     title: 'API 类型',
     key: 'apiType',
-    width: 80,
+    width: 40,
     render(row) {
       if (row.apiType === 'ChatGPTAPI')
 
@@ -36,7 +35,7 @@ const columns: DataTableColumns<ChatRoomVO> = [
   {
     title: '创建时间',
     key: 'createTime',
-    width: 80,
+    width: 70,
     render(row) {
       return h('span', formatDateTime(row.createTime))
     },
@@ -44,7 +43,7 @@ const columns: DataTableColumns<ChatRoomVO> = [
   {
     title: '更新时间',
     key: 'updateTime',
-    width: 80,
+    width: 70,
     render(row) {
       return h('span', formatDateTime(row.updateTime))
     },
@@ -63,7 +62,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <CommonPage show-footer title="消息记录">
+  <CommonPage show-footer title="聊天室">
     <CrudTable
       ref="$table"
       v-model:query-items="queryItems"

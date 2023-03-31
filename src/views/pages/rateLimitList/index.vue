@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { DataTableColumns } from 'naive-ui'
-import type { ApifoxModel } from './types/types'
+import type { RateLimitVO } from './types/types'
 import api from './api'
 import { CrudTable } from '@/components/index.js'
-import { formatDateTime } from '@/utils'
 
 const $table = ref<any>(null)
 /** QueryBar筛选参数（可选） */
@@ -11,32 +10,36 @@ const queryItems = ref<any>({})
 /** 补充参数（可选） */
 const extraParams = ref<any>({})
 
-const columns: DataTableColumns<ApifoxModel> = [
+const columns: DataTableColumns<RateLimitVO> = [
 
-  { title: 'IP地址', key: 'ip', width: 80 },
-  { title: '时间内已经发送次数', key: 'alreadySendCount', width: 80, ellipsis: { tooltip: true } },
+  { title: 'ip', key: 'ip', width: 80 },
+  { title: 'ip限流规则', key: 'ipLimitRule', width: 80, ellipsis: { tooltip: true } },
+  { title: '全局限流规则', key: 'globalLimitRule', width: 80, ellipsis: { tooltip: true } },
   {
-    title: '是否被限流',
-    key: 'isLimited',
+    title: '是否被 ip 限流',
+    key: 'isIpLimited',
     width: 80,
     render(row) {
-      if (row.isLimited)
-
+      if (row.isIpLimited)
         return h('span', '是')
-
-      else
-
-        return h('span', '否')
+      return h('span', '否')
     },
   },
-  { title: '限流规则', key: 'limitRule', width: 80, ellipsis: { tooltip: true } },
+  {
+    title: '是否被全局限流',
+    key: 'isGlobalLimited',
+    width: 80,
+    render(row) {
+      if (row.isGlobalLimited)
+        return h('span', '是')
+      return h('span', '否')
+    },
+  },
+  { title: 'ip 限制时间内发送次数', key: 'alreadySendCount', width: 80, ellipsis: { tooltip: true } },
   {
     title: '下次可以发送消息的时间',
     key: 'nextSendTime',
     width: 80,
-    render(row) {
-      return h('span', formatDateTime(row.nextSendTime))
-    },
   },
 ]
 
