@@ -50,72 +50,16 @@ export default [
     response: (data = {}) => {
       // const { title, pageNum, pageSize } = data.query
       const { pageNum, pageSize } = data.query
-      const pageData = returnData
+      const records = returnData
       const total = 60
-      // 过滤
-      // const filterData = returnData.filter(item => item.chatRoomId.includes(title) || (!title && title !== 0))
-      // if (filterData.length) {
-      //   if (pageSize) {
-      //     while (pageData.length < pageSize)
-      //       pageData.push(filterData[Math.round(Math.random() * (filterData.length - 1))])
-      //   }
-      //   else {
-      //     pageData = filterData
-      //   }
-      //   pageData = pageData.map((item, index) => ({
-      //     id: pageSize * (pageNum - 1) + index + 1,
-      //     ...item,
-      //   }))
-      // }
-      // else {
-      //   total = 0
-      // }
       return {
         code: 0,
         message: 'ok',
         data: {
-          pageData,
+          records,
           total,
           pageNum,
           pageSize,
-        },
-      }
-    },
-  },
-  {
-    url: '/api/chat_message/post',
-    method: 'post',
-    response: ({ body }) => {
-      return {
-        code: 0,
-        message: 'ok',
-        data: body,
-      }
-    },
-  },
-  {
-    url: '/api/chat_message/post/:id',
-    method: 'put',
-    response: ({ query, body }) => {
-      return {
-        code: 0,
-        message: 'ok',
-        data: {
-          id: query.id,
-          body,
-        },
-      }
-    },
-  },
-  {
-    url: '/api/chat_message/post/:id',
-    method: 'delete',
-    response: ({ query }) => {
-      return {
-        code: 0,
-        message: 'ok',
-        data: {
-          id: query.id,
         },
       }
     },

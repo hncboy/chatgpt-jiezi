@@ -2,21 +2,21 @@ import type { RouteType } from '~/types/router'
 const Layout = () => import('@/layout/index.vue')
 
 export default {
-  name: 'SessnRec',
-  path: '/sessnRec',
+  name: 'ChatRoom',
+  path: '/chatRoom',
   component: Layout,
-  redirect: '/sessnRec/index',
+  redirect: '/chatRoom/index',
   meta: {
-    order: 2,
+    order: 3,
   },
   children: [
     {
-      name: 'sessnReCindex',
+      name: 'chatRoomIndex',
       path: 'index',
       component: () => import('./index.vue'),
       meta: {
-        title: '会话记录',
-        icon: 'akar-icons:book-close',
+        title: '聊天室管理',
+        icon: 'uil:browser',
       },
     },
   ],

@@ -2,21 +2,21 @@ import type { RouteType } from '~/types/router'
 const Layout = () => import('@/layout/index.vue')
 
 export default {
-  name: 'UsersMgt',
-  path: '/usersMgt',
+  name: 'RateLimitList',
+  path: '/rateLimitList',
   component: Layout,
-  redirect: '/usersMgt/index',
+  redirect: '/rateLimitList/index',
   meta: {
-    order: 3,
+    order: 2,
   },
   children: [
     {
-      name: 'usersMgtIndex',
+      name: 'rateLimitListIndex',
       path: 'index',
       component: () => import('./index.vue'),
       meta: {
-        title: '用户管理',
-        icon: 'mi:users',
+        title: '限流记录',
+        icon: 'ph:activity-bold',
       },
     },
   ],
