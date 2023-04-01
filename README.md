@@ -1,11 +1,37 @@
-<p align='center'>
-  <b>English</b> | 
-  <a href="https://github.com/hncboy/chatgpt-web-admin/blob/main/README.zh-CN.md">简体中文</a>
-</p>
+# 介绍
 
-### Introduction
+基于的 [chatgpt-web 2.10.8](https://github.com/Chanzhaoyu/chatgpt-web/releases/tag/v2.10.8) 版本，可以在不改动客户端的情况下增加管理端的功能
 
-灿哥来写
+- [客户端 chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
+- [后台 chatgpt-web-java](https://github.com/hncboy/chatgpt-web-java)
+
+## 功能
+
+### 消息记录
+
+展示消息的列表，问题和回答各是一条消息。通过父消息 id 关联上一条消息。父消息和当前消息一定是同一个聊天室的。
+
+![](pics/chat_message_1.png)
+
+### 限流记录
+
+查看各个 ip 的限流记录，只记录在限流时间范围的限流次数。
+
+![](pics/rate_limit_1.png)
+
+### 聊天室管理
+
+查看聊天室。这里的聊天室和客户端左边的对话不是同一个概念。在同一个窗口中，我们既可以选择关联上下文发送后者不关联上下文发送。如果不关联上下文发送每次发送消息都会产生一个聊天室。
+
+![](pics/chat_room_1.png)
+
+### 敏感词管理
+
+查看敏感词列表，目前只提供了查询的功能，后期可以增加管理。
+
+![](pics/sensitive_word_1.png)
+
+# 构建运行
 
 ### Getting Started
 
@@ -55,7 +81,7 @@ pnpm preview
 pnpm cz
 ```
 
-### 修改配置
+# 修改配置
 
 ## 请求地址
 
@@ -65,17 +91,19 @@ pnpm cz
 
 从根目录 /public/theme.json 文件中修改基础配色
 
-## 修改图标 本项目图标使用 iconify 图标
+## 修改图标
+
+本项目图标使用 iconify 图标
 
 首先去图标库地址：[icones](https://icones.js.org/) 找合适的图标
 
-### 1. 结合 unocss 使用
+1. 结合 unocss 使用
 
 ```html
 <i i-carbon-sun /> <i class="i-carbon-sun" />
 ```
 
-### 2. 结合插件 unplugin-icons 自定义标签使用
+2. 结合插件 unplugin-icons 自定义标签使用
 
 `<icon-[iconify图标名称]`
 
@@ -93,7 +121,7 @@ pnpm cz
 
 具体配置参看 build/plugin/unplugin.js
 
-### 3. 结合 Naive UI 的 NIcon 组件封装使用
+3. 结合 Naive UI 的 NIcon 组件封装使用
 
 ```html
 <!-- iconify图标 -->

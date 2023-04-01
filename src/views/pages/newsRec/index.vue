@@ -18,7 +18,7 @@ const columns: DataTableColumns<ChatMessageVO> = [
   // { title: '父级回答消息 id', key: 'parentAnswerMessageId', width: 80, ellipsis: { tooltip: true } },
   // { title: '父级问题消息 id', key: 'parentQuestionMessageId', width: 80, ellipsis: { tooltip: true } },
   // { title: '上下文数量', key: 'contextCount', width: 60 },
-  // { title: '问题上下文数量', key: 'questionContextCount', width: 50 },
+  { title: '问题上下文数量', key: 'questionContextCount', width: 50 },
   {
     title: '类型',
     key: 'messageType',
@@ -52,8 +52,8 @@ const columns: DataTableColumns<ChatMessageVO> = [
   { title: 'IP地址', key: 'ip', width: 60 },
   { title: '消息内容', key: 'content', width: 80, ellipsis: { tooltip: true } },
   { title: '错误响应数据', key: 'responseErrorData', width: 50, ellipsis: { tooltip: true } },
-  { title: '输入 Tokens', key: 'promptTokens', width: 50 },
-  { title: '累计 Tokens', key: 'totalTokens', width: 50 },
+  // { title: '输入 Tokens', key: 'promptTokens', width: 50 },
+  // { title: '累计 Tokens', key: 'totalTokens', width: 50 },
   {
     title: '消息状态',
     key: 'status',
