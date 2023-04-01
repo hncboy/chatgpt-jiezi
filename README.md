@@ -4,7 +4,11 @@
 
 - [客户端 chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
 - [后台 chatgpt-web-java](https://github.com/hncboy/chatgpt-web-java)
-
+- 
+## 地址
+- 客户端：https://front.stargpt.top/ 密码：stargpt
+- 管理端：https://admin.stargpt.top/ 账号密码 admin-admin
+- 
 ## 功能
 
 ### 消息记录
@@ -164,4 +168,4 @@ pnpm cz
 
 ## License
 
-MIT © [hncboy](license)
+MIT © [hncboy](LICENSE)
