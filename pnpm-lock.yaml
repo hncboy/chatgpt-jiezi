@@ -12,6 +12,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.1.2
   '@vueuse/core': ^8.9.4
   axios: ^1.2.2
+  busuanzi.pure.js: ^1.0.3
   colord: ^2.9.2
   commitizen: ^4.2.5
   crypto-js: ^4.1.1
@@ -45,6 +46,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 8.9.4_vue@3.2.45
   axios: 1.2.2
+  busuanzi.pure.js: 1.0.3
   crypto-js: 4.1.1
   lodash-es: 4.17.21
   mockjs: 1.1.0
@@ -1703,6 +1705,10 @@ packages:
     dependencies:
       streamsearch: 1.1.0
     dev: true
+
+  /busuanzi.pure.js/1.0.3:
+    resolution: {integrity: sha512-tPULdyx+8NNb9geZYDpktKmHAYx9f2LEOBaHyWCaM7iPEMIa/43KgYAUluuU7YG9UFSOFpj4dO7Nj2Vlu3V9Rg==}
+    dev: false
 
   /cac/6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}

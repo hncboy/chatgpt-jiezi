@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import busuanziScript from 'busuanzi.pure.js'
 import { useUserStore } from '@/store'
+
+onMounted(() => {
+  busuanziScript.fetch()
+})
 
 const userStore = useUserStore()
 </script>
@@ -26,6 +32,11 @@ const userStore = useUserStore()
               <p text-16>
                 Hello, {{ userStore.name }} ！
               </p>
+              <span id="busuanzi_container_site_pv" style="display:none">
+                本站总访问量
+                <span id="busuanzi_value_site_pv" />次
+                <span class="post-meta-divider">|</span>
+              </span>
               <n-gradient-text
                 mt-5 text-12 op-60
                 gradient="linear-gradient(90deg, red 0%, green 50%, blue 100%)"
@@ -64,6 +75,7 @@ const userStore = useUserStore()
             >
               <p op-60>
                 一个基于 Vue3、Vite3、TypeScript、Pinia、Unocss、Naive UI 的轻量级后台管理模板
+
               </p>
             </n-card>
           </a>
