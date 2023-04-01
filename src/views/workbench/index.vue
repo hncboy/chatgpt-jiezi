@@ -37,6 +37,10 @@ const userStore = useUserStore()
                 <span id="busuanzi_value_site_pv" />次
                 <span class="post-meta-divider">|</span>
               </span>
+              <span id="busuanzi_container_site_uv" style="display:none">
+                本站访客数
+                <span id="busuanzi_value_site_uv" />人次
+              </span>
               <n-gradient-text
                 mt-5 text-12 op-60
                 gradient="linear-gradient(90deg, red 0%, green 50%, blue 100%)"
