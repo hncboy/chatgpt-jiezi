@@ -45,7 +45,7 @@ const returnData = [
 
 export default [
   {
-    url: '/api/chat_message/page',
+    url: '/api/chat_message/page_',
     method: 'post',
     response: (data = {}) => {
       // const { title, pageNum, pageSize } = data.query

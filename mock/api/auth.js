@@ -2,7 +2,7 @@ import { resolveToken } from '../utils'
 
 export default [
   {
-    url: '/api/sys_user/login',
+    url: '/api/sys_user/login_',
     method: 'post',
     response: (options) => {
       const { account } = options.body
