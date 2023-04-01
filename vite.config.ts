@@ -31,7 +31,8 @@ export default defineConfig((configEnv: ConfigEnv) => {
         '/api': {
           target: viteEnv.VITE_BASE_URL,
           changeOrigin: true,
-          rewrite: path => path.replace(/^\/api/, ''), // 不可以省略rewrite
+          // rewrite: path => path.replace(/^\/api/, ''), // 不可以省略rewrite
+          rewrite: path => path.replace('/api/', '/'),
         },
       },
     },
