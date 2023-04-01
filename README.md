@@ -137,3 +137,31 @@ pnpm cz
 ## UnoCss
 
 [保熟的 UnoCSS 使用指北，优雅使用 antfu 大佬的原子化 CSS](https://juejin.cn/post/7142466784971456548)
+
+# 联系
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="text-align: center">
+    <img style="max-width: 100%" src="pics/wechat_group.png" alt="微信群聊" />
+    <p>微信群聊</p>
+  </div>
+</div>
+
+# 赞助
+
+如果觉得项目对你有帮助的，条件允许的话可以点个 Star 或者在赞助一小点。感谢支持~
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="text-align: center">
+    <img style="max-width: 100%" src="pics/wechat_pay.png" alt="微信" />
+    <p>微信支付</p>
+  </div>
+  <div style="text-align: center">
+    <img style="max-width: 100%" src="pics/zhifubao_pay.png" alt="支付宝" />
+    <p>支付宝</p>
+  </div>
+</div>
+
+## License
+
+MIT © [hncboy](license)
