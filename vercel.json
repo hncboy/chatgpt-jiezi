@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/api/(.*)",
-			"destination": "https://api-demo.stargpt.top/$1"
+			"destination": "https://api-demo.stargpt.top/admin/$1"
 		}
 	]
 }
