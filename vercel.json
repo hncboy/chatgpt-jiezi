@@ -1,1 +1,12 @@
-{"rewrites":[{"source":"/:path*","destination":"/index.html"},{"source":"/api/(.*)","destination":"http://localhost:3002/admin/$1"}]}
+{
+  "rewrites": [
+    {
+      "source": "!/api/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "http://localhost:3002/admin/$1"
+    }
+  ]
+}
