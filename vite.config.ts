@@ -13,16 +13,15 @@ export default defineConfig((configEnv: ConfigEnv) => {
   const viteEnv = convertEnv(loadEnv(configEnv.mode, process.cwd()))
 
   // vercel配置 修改vercel.json
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const fs = require('fs')
+  // const fs = require('fs')
 
-  // 读取JSON文件内容
-  const jsonData = JSON.parse(fs.readFileSync('vercel.json'))
-  jsonData.rewrites[jsonData.rewrites.length - 1].destination = `${viteEnv.VITE_BASE_URL}/$1`
-  // 写入修改后的JSON数据到本地文件中
-  fs.writeFileSync('vercel.json', JSON.stringify(jsonData))
-  // eslint-disable-next-line no-console
-  console.log(JSON.parse(fs.readFileSync('vercel.json')))
+  // // 读取JSON文件内容
+  // const jsonData = JSON.parse(fs.readFileSync('vercel.json'))
+  // jsonData.rewrites[jsonData.rewrites.length - 1].destination = `${viteEnv.VITE_BASE_URL}/$1`
+  // // 写入修改后的JSON数据到本地文件中
+  // fs.writeFileSync('vercel.json', JSON.stringify(jsonData))
+  // // eslint-disable-next-line no-console
+  // console.log(JSON.parse(fs.readFileSync('vercel.json')))
 
   const { VITE_PORT, VITE_PUBLIC_PATH } = viteEnv
   return {
