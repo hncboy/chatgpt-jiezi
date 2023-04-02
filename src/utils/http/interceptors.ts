@@ -33,19 +33,17 @@ export function reqReject(error: AxiosError) {
 
 /** 响应拦截 */
 export function resResolve(response: AxiosResponse) {
-  // TODO: 处理不同的 response.headers
-  const { data } = response
+  // 处理不同的 response.headers
+  const { data, status, config } = response
+  if (data?.code !== 200) {
+    const code = data?.code ?? status
+    /** 根据code处理对应的操作，并返回处理后的message */
+    const message = resolveResError(code, data?.message)
+    const { noNeedTip } = config as RequestConfig
+    !noNeedTip && window.$message?.error(message)
+    return Promise.reject(new AxiosRejectError({ code, message, data: data || response }))
+  }
 
-  // const { data, status, config, statusText } = response
-  // if (data?.code !== 200) {
-  //   const code = data?.code ?? status
-
-  //   /** 根据code处理对应的操作，并返回处理后的message */
-  //   const message = resolveResError(code, data?.message ?? statusText)
-  //   const { noNeedTip } = config as RequestConfig
-  //   !noNeedTip && window.$message?.error(message)
-  //   return Promise.reject(new AxiosRejectError({ code, message, data: data || response }))
-  // }
   return Promise.resolve(data)
 }
 

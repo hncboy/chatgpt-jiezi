@@ -32,10 +32,11 @@ export const useUserStore = defineStore('user', {
     },
   },
   actions: {
+    // TODO mock人员数据
     async getUserInfo() {
       try {
         const res: any = await api.getUser()
-        if (res.code === 0) {
+        if (res.code === 200) {
           const { id, name, avatar, role } = res.data
           this.userInfo = { id, name, avatar, role }
           return Promise.resolve(res.data)
