@@ -52,15 +52,20 @@ const userStore = useUserStore()
                   / 10
                 </template>
               </n-statistic> -->
-              <!-- TODO start数图 -->
+              <!-- github数图 -->
               <n-statistic label="Stars" w-80 ml-20>
                 <a href="https://github.com/hncboy/chatgpt-web-admin">
-                  <img allt="stars" src="https://badgen.net/github/stars/hncboy/chatgpt-web-admi">
+                  <img allt="stars" src="https://img.shields.io/github/stars/hncboy/chatgpt-web-admin?style=social">
+                </a>
+              </n-statistic>
+              <n-statistic label="Watch" w-80 ml-20>
+                <a href="https://github.com/hncboy/chatgpt-web-admin">
+                  <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-web-admin?style=social">
                 </a>
               </n-statistic>
               <n-statistic label="Forks" w-80 ml-20>
                 <a href="https://github.com/hncboy/chatgpt-web-admin">
-                  <img allt="forks" src="https://badgen.net/github/forks/hncboy/chatgpt-web-admin">
+                  <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-web-admin?style=social">
                 </a>
               </n-statistic>
             </div>

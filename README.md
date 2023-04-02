@@ -4,11 +4,14 @@
 
 - [客户端 chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
 - [后台 chatgpt-web-java](https://github.com/hncboy/chatgpt-web-java)
-- 
+-
+
 ## 地址
+
 - 客户端：https://front.stargpt.top/ 密码：stargpt
 - 管理端：https://admin.stargpt.top/ 账号密码 admin-admin
-- 
+-
+
 ## 功能
 
 ### 消息记录
@@ -59,11 +62,6 @@ pnpm dev
 ### Build and Release
 
 ```shell
-# Test Environment
-pnpm build:test
-
-# Github Environment
-pnpm build:github
 
 # Prod Environment
 pnpm build
@@ -81,15 +79,30 @@ pnpm lint:fix
 # Preview（Need to build first）
 pnpm preview
 
-# Commit（husky+commitlint）
-pnpm cz
+# Commit（add+husky+commitlint）
+pnpm commit
 ```
 
 # 修改配置
 
 ## 请求地址
 
-从根目录 /public/proxy-config.ts 文件中修改不同环境中的请求路径
+从根目录 .env 文件中修改不同环境中的请求路径
+开发环境从 .env.development 中修改 VITE_BASE_URL
+构建环境从 .env.production 中修改 VITE_BASE_URL
+
+## 获取当前项目的 star 等信息
+
+在 https://shields.io/category/social 获取链接
+修改/src/view/workbench/index.vue 文件中如下代码块的 src
+
+```vue
+<n-statistic label="Stars" w-80 ml-20>
+  <a href="https://github.com/hncboy/chatgpt-web-admin">
+    <img allt="stars" src="https://img.shields.io/github/stars/hncboy/chatgpt-web-admin?style=social">
+  </a>
+</n-statistic>
+```
 
 ## 修改配色
 
