@@ -50,8 +50,8 @@ const columns: DataTableColumns<ChatMessageVO> = [
     },
   },
   { title: 'IP地址', key: 'ip', width: 60 },
-  { title: '消息内容', key: 'content', width: 80, ellipsis: { tooltip: true } },
-  { title: '错误响应数据', key: 'responseErrorData', width: 50, ellipsis: { tooltip: true } },
+  { title: '消息内容', key: 'content', width: 80, ellipsis: { tooltip: false, expandTrigger: 'click', lineClamp: '1' } },
+  { title: '错误响应数据', key: 'responseErrorData', width: 50, ellipsis: { tooltip: false, expandTrigger: 'click', lineClamp: '1' } },
   // { title: '输入 Tokens', key: 'promptTokens', width: 50 },
   // { title: '累计 Tokens', key: 'totalTokens', width: 50 },
   {
