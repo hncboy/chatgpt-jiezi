@@ -1,8 +1,1 @@
-{
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "https://api-demo.stargpt.top/admin/$1"
-    }
-  ]
-}
+{"rewrites":[{"source":"/:path*","destination":"/index.html"},{"source":"/api/(.*)","destination":"http://localhost:3002/admin/$1"}]}
