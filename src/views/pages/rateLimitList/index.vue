@@ -11,7 +11,6 @@ const queryItems = ref<any>({})
 const extraParams = ref<any>({})
 
 const columns: DataTableColumns<RateLimitVO> = [
-
   { title: 'ip', key: 'ip', width: 80 },
   { title: 'ip限流规则', key: 'ipLimitRule', width: 80, ellipsis: { tooltip: true } },
   { title: '全局限流规则', key: 'globalLimitRule', width: 80, ellipsis: { tooltip: true } },
@@ -61,6 +60,7 @@ onMounted(() => {
       v-model:query-items="queryItems"
       :extra-params="extraParams"
       :scroll-x="1200"
+      :is-pagination="false"
       :columns="columns"
       :get-data="api.getRateLimitListData"
       @on-checked="onChecked"
