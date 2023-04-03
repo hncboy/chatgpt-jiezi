@@ -2,6 +2,7 @@
 
 基于的 [chatgpt-web 2.10.8](https://github.com/Chanzhaoyu/chatgpt-web/releases/tag/v2.10.8) 版本，可以在不改动客户端的情况下增加管理端的功能
 
+- 前端开发[@mjjh](https://github.com/mjjh1717)
 - [客户端 chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
 - [后台 chatgpt-web-java](https://github.com/hncboy/chatgpt-web-java)
 
@@ -142,6 +143,12 @@ pnpm commit
 
 # 联系
 
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="text-align: center">
+    <img style="max-width: 100%" src="pics/wechat_group.png" alt="wechat" />
+    <p>微信群</p>
+  </div>
+</div>
 <div style="display: flex; align-items: center; gap: 20px;">
   <div style="text-align: center">
     <img style="max-width: 100%" src="pics/qq_group.png" alt="QQ" />
