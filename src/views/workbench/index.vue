@@ -32,19 +32,18 @@ const userStore = useUserStore()
               <p text-16>
                 Hello, {{ userStore.name }} ！
               </p>
-              <span id="busuanzi_container_site_pv" style="display:none">
-                本站总访问量
-                <span id="busuanzi_value_site_pv" />次
-                <span class="post-meta-divider">|</span>
-              </span>
-              <span id="busuanzi_container_site_uv" style="display:none">
-                本站访客数
-                <span id="busuanzi_value_site_uv" />人次
-              </span>
-              <n-gradient-text
-                mt-5 text-12 op-60
-                gradient="linear-gradient(90deg, red 0%, green 50%, blue 100%)"
-              />
+              <p>
+                <span id="busuanzi_container_site_pv">
+                  本站总访问量
+                  <span id="busuanzi_value_site_pv" />次
+                </span>
+              </p>
+              <p>
+                <span id="busuanzi_container_site_uv">
+                  本站访客数
+                  <span id="busuanzi_value_site_uv" />人次
+                </span>
+              </p>
             </div>
           </div>
         </n-card>
@@ -52,7 +51,7 @@ const userStore = useUserStore()
 
       <n-card title="项目" size="small" :segmented="true" mt-15 rounded-10>
         <div flex flex-wrap justify-start>
-          <a href="https://github.com/Chanzhaoyu/chatgpt-web" target="_blank">
+          <a href="https://github.com/Chanzhaoyu/chatgpt-web" target="_blank" mr-20>
             <n-card
               w-350 flex-shrink-0 mt-10 mb-10 cursor-pointer
               hover:card-shadow
@@ -70,18 +69,18 @@ const userStore = useUserStore()
                 </n-statistic>
                 <n-statistic w-80 ml-20>
                   <a href="https://github.com/Chanzhaoyu/chatgpt-web">
-                    <img allt="forks" src="https://img.shields.io/github/watchers/Chanzhaoyu/chatgpt-web?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/forks/Chanzhaoyu/chatgpt-web?style=social">
                   </a>
                 </n-statistic>
-                <n-statistic w-80 ml-20>
+                <n-statistic w-100 ml-20>
                   <a href="https://github.com/Chanzhaoyu/chatgpt-web">
-                    <img allt="forks" src="https://img.shields.io/github/forks/Chanzhaoyu/chatgpt-web?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/watchers/Chanzhaoyu/chatgpt-web?style=social">
                   </a>
                 </n-statistic>
               </div>
             </n-card>
           </a>
-          <a ml-20 href="https://github.com/hncboy/chatgpt-web-admin" target="_blank">
+          <a href="https://github.com/hncboy/chatgpt-web-admin" target="_blank" mr-20>
             <n-card
               w-350 flex-shrink-0 mt-10 mb-10 cursor-pointer
               hover:card-shadow
@@ -99,18 +98,18 @@ const userStore = useUserStore()
                 </n-statistic>
                 <n-statistic w-80 ml-20>
                   <a href="https://github.com/hncboy/chatgpt-web-admin">
-                    <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-web-admin?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-web-admin?style=social">
                   </a>
                 </n-statistic>
-                <n-statistic w-80 ml-20>
+                <n-statistic w-100 ml-20>
                   <a href="https://github.com/hncboy/chatgpt-web-admin">
-                    <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-web-admin?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-web-admin?style=social">
                   </a>
                 </n-statistic>
               </div>
             </n-card>
           </a>
-          <a ml-20 href="https://github.com/hncboy/chatgpt-web-java" target="_blank">
+          <a href="https://github.com/hncboy/chatgpt-web-java" target="_blank" mr-20>
             <n-card
               w-350 flex-shrink-0 mt-10 mb-10 cursor-pointer
               hover:card-shadow
@@ -128,18 +127,18 @@ const userStore = useUserStore()
                 </n-statistic>
                 <n-statistic w-80 ml-20>
                   <a href="https://github.com/hncboy/chatgpt-web-java">
-                    <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-web-java?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-web-java?style=social">
                   </a>
                 </n-statistic>
-                <n-statistic w-80 ml-20>
+                <n-statistic w-100 ml-20>
                   <a href="https://github.com/hncboy/chatgpt-web-java">
-                    <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-web-java?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-web-java?style=social">
                   </a>
                 </n-statistic>
               </div>
             </n-card>
           </a>
-          <a ml-20 href="https://github.com/zclzone/vue-naive-admin" target="_blank">
+          <a href="https://github.com/zclzone/vue-naive-admin" target="_blank" mr-20>
             <n-card
               w-350 flex-shrink-0 mt-10 mb-10 cursor-pointer
               hover:card-shadow
@@ -157,21 +156,17 @@ const userStore = useUserStore()
                 </n-statistic>
                 <n-statistic w-80 ml-20>
                   <a href="https://github.com/zclzone/vue-naive-admin">
-                    <img allt="forks" src="https://img.shields.io/github/watchers/zclzone/vue-naive-admin?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/forks/zclzone/vue-naive-admin?style=social">
                   </a>
                 </n-statistic>
-                <n-statistic w-80 ml-20>
+                <n-statistic w-100 ml-20>
                   <a href="https://github.com/zclzone/vue-naive-admin">
-                    <img allt="forks" src="https://img.shields.io/github/forks/zclzone/vue-naive-admin?style=social">
+                    <img allt="forks" src="https://img.shields.io/github/watchers/zclzone/vue-naive-admin?style=social">
                   </a>
                 </n-statistic>
               </div>
             </n-card>
           </a>
-          <!-- <div w-300 h-0 />
-          <div w-300 h-0 />
-          <div w-300 h-0 />
-          <div w-300 h-0 /> -->
         </div>
       </n-card>
     </div>

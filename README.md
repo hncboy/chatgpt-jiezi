@@ -173,6 +173,10 @@ pnpm commit
   </div>
 </div>
 
+# 风险声明
+
+本项目仅供学习和研究使用，不鼓励用于商业用途。我们不对任何因使用本项目而导致的任何损失负责。
+
 ## License
 
 MIT © [hncboy](LICENSE)

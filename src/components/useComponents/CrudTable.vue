@@ -1,8 +1,8 @@
 <script setup>
-import { nextTick, reactive, ref } from 'vue'
+import { nextTick, reactive, ref, watch } from 'vue'
 import { NDataTable } from 'naive-ui'
 import QueryBar from './QueryBar.vue'
-
+import { useThemeStore } from '@/store'
 const props = defineProps({
   /**
    * @remote true: 后端分页  false： 前端分页
@@ -60,11 +60,17 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['update:queryItems', 'onChecked'])
+
+const themeStore = useThemeStore()
+
 const loading = ref(false)
 const initQuery = { ...props.queryItems }
 const tableData = ref([])
-const pagination = reactive({ page: 1, pageSize: 10 })
 
+const pagination = reactive({ page: 1, pageSize: 10, pageSlot: themeStore.isMobile ? 5 : 10 })
+watch(themeStore, (newVal, oldVal) => {
+  pagination.pageSlot = themeStore.isMobile ? 5 : 10
+})
 async function handleQuery() {
   try {
     loading.value = true
