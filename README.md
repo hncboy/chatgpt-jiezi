@@ -1,3 +1,13 @@
+# 注意
+
+### 关于提问
+
+有问题优先通过文档和 issue 解决，也许你遇到的问题已经有解决方案了，没有的话可以提新的 issue。
+
+### 关于 ApiKey
+
+当前网站免费提问，因 ApiKey 额度有限，限流频率会比较高，如果有大佬赞助供网站使用的话十分感激。
+
 # 介绍
 
 基于的 [chatgpt-web 2.10.8](https://github.com/Chanzhaoyu/chatgpt-web/releases/tag/v2.10.8) 版本，可以在不改动客户端的情况下增加管理端的功能
@@ -143,6 +153,10 @@ pnpm commit
 
 [保熟的 UnoCSS 使用指北，优雅使用 antfu 大佬的原子化 CSS](https://juejin.cn/post/7142466784971456548)
 
+# 风险声明
+
+本项目仅供学习和研究使用，不鼓励用于商业用途。对于因使用本项目而导致的任何损失，我们不承担任何责任。
+
 # 联系
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -173,10 +187,6 @@ pnpm commit
   </div>
 </div>
 
-# 风险声明
-
-本项目仅供学习和研究使用，不鼓励用于商业用途。我们不对任何因使用本项目而导致的任何损失负责。
-
-## License
+# License
 
 MIT © [hncboy](LICENSE)
