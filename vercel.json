@@ -1,15 +1,28 @@
 {
-  "rewrites": [
+  "headers": [
     {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "content-type"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "DELETE,PUT,POST,GET,OPTIONS"
+        }
+      ]
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/:path*",
-      "methods": ["GET", "POST", "PUT", "PATCH", "DELTE"],
-      "dest": "proxy"
-    }
+      "source": "/api/(.*)",
+      "destination": "/api/proxy"
+    },
+    { "source": "/:path*", "destination": "/index.html" }
   ]
 }
