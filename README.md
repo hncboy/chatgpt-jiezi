@@ -1,3 +1,5 @@
+# 解字 chatgpt-jiezi
+
 # 注意
 
 ### 关于提问
@@ -10,11 +12,10 @@
 
 # 介绍
 
-基于的 [chatgpt-web 2.10.8](https://github.com/Chanzhaoyu/chatgpt-web/releases/tag/v2.10.8) 版本，可以在不改动客户端的情况下增加管理端的功能
-
+- 本项目为解字管理端代码
 - 前端开发[@mjjh](https://github.com/mjjh1717)
-- [用户端 chatgpt-web](https://github.com/Chanzhaoyu/chatgpt-web)
-- [后台 chatgpt-web-java](https://github.com/hncboy/chatgpt-web-java)
+- 前端-说文用户端开源代码 https://github.com/mjjh1717/chatgpt-shuowen
+- Java 后台 https://github.com/hncboy/chatgpt-web-java
 
 ## 地址
 
