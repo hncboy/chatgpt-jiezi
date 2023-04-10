@@ -60,9 +60,9 @@
 git config --global core.autocrlf false
 
 # Clone Project
-git clone https://github.com/hncboy/chatgpt-web-admin
+git clone https://github.com/hncboy/chatgpt-jiezi
 
-cd chatgpt-web-admin
+cd chatgpt-jiezi
 
 # Install dependencies(Recommended use pnpm: https://pnpm.io/zh/installation)
 npm i -g pnpm # Installed and can be ignored

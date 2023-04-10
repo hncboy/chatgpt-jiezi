@@ -14,7 +14,7 @@ const userStore = useUserStore()
   <AppPage :show-footer="true" min-w-375>
     <div flex-1 min-w-375>
       <n-watermark
-        content="StarGPT"
+        content="解字"
         cross
         selectable
         :font-size="16"
@@ -80,11 +80,11 @@ const userStore = useUserStore()
               </div>
             </n-card>
           </a>
-          <a href="https://github.com/hncboy/chatgpt-web-admin" target="_blank" mr-20>
+          <a href="https://github.com/hncboy/chatgpt-jiezi" target="_blank" mr-20>
             <n-card
               w-350 flex-shrink-0 mt-10 mb-10 cursor-pointer
               hover:card-shadow
-              title="ChatGPT Web Admin"
+              title="ChatGPT JieZi"
               size="small"
             >
               <p op-60>
@@ -92,18 +92,18 @@ const userStore = useUserStore()
               </p>
               <div ml-auto items-center hidden md:flex>
                 <n-statistic w-80>
-                  <a href="https://github.com/hncboy/chatgpt-web-admin/stargazers">
-                    <img allt="stars" src="https://img.shields.io/github/stars/hncboy/chatgpt-web-admin?style=social">
+                  <a href="https://github.com/hncboy/chatgpt-jiezi/stargazers">
+                    <img allt="stars" src="https://img.shields.io/github/stars/hncboy/chatgpt-jiezi?style=social">
                   </a>
                 </n-statistic>
                 <n-statistic w-80 ml-20>
-                  <a href="https://github.com/hncboy/chatgpt-web-admin">
-                    <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-web-admin?style=social">
+                  <a href="https://github.com/hncboy/chatgpt-jiezi">
+                    <img allt="forks" src="https://img.shields.io/github/forks/hncboy/chatgpt-jiezi?style=social">
                   </a>
                 </n-statistic>
                 <n-statistic w-100 ml-20>
-                  <a href="https://github.com/hncboy/chatgpt-web-admin">
-                    <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-web-admin?style=social">
+                  <a href="https://github.com/hncboy/chatgpt-jiezi">
+                    <img allt="forks" src="https://img.shields.io/github/watchers/hncboy/chatgpt-jiezi?style=social">
                   </a>
                 </n-statistic>
               </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function handleLinkClick() {
-  window.open('https://github.com/hncboy/chatgpt-web-admin')
+  window.open('https://github.com/hncboy/chatgpt-jiezi')
 }
 </script>
 
