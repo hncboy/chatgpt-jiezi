@@ -252,7 +252,7 @@ pnpm commit
 
 <div style="display: flex; align-items: center; gap: 20px;">
   <div style="text-align: center">
-    <img style="max-width: 200px" src="pics/me.png" alt="微信" />
+    <img style="max-width: 200px" src="pics/wx.png" alt="微信" />
   </div>
 </div>
 
